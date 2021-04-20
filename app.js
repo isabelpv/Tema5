@@ -49,10 +49,10 @@ for (producto of carrito) {
     listar (producto)
 }
 
-var totalCarro
+var totalCarro=0;
 
 for (producto of carrito) {
-    totalCarro += producto.price * producto.count 
+    totalCarro +=  producto.count * producto.price
 }
 
 console.log ("El precio total de todos los productos es de : " +  totalCarro)
@@ -101,4 +101,12 @@ if (envioGratis == true) {
 
 //Mostrar el carrito en un listado de html básico
 
+document.write ("<h1>CARRITO DE LA COMPRA</h1>");
+for (producto of carrito){
+    document.write("<ul>");
+    document.write("<li>" + producto.name + "</li>");
+    document.write("</ul>");
+}
+
 // Aplicar un descuento del 5% si la compra es mayor de 50€
+
