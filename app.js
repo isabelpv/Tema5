@@ -110,3 +110,9 @@ for (producto of carrito){
 
 // Aplicar un descuento del 5% si la compra es mayor de 50€
 
+let discount = 0
+if (totalCarro>=50){
+    discount = totalCarro * 0.05
+}
+console.log ("Se ha aplicado un descuento de: " + discount)
+console.log ("El total con descuento es de: " + (totalCarro-discount))
