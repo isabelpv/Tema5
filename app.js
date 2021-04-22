@@ -34,8 +34,7 @@ const carrito = [
    
 
    function listar (producto) {
-       var num = 0
-       console.log ("Producto número " + num)
+      
        console.log ("Id= " + producto.id)
        console.log ("Name= " + producto.name)
        console.log ("Price= " + producto.price)
